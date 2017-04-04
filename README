@@ -1,0 +1,9 @@
+Database create statement for recording games
+
+CREATE TABLE `Games` (
+  `id` int(6) unsigned NOT NULL AUTO_INCREMENT,
+  `game` longtext NOT NULL,
+  `winner` varchar(4) NOT NULL DEFAULT '',
+  `created_at` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=latin1;
